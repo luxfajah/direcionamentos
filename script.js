@@ -1,28 +1,13 @@
 /* 
    Alice Stoff - Creative Direction Brand Portal JS
-   Interactive components: Navigation, Simulator, Checklist, Lightbox, Clipboard Copy
+   Interactive components: Navigation, Simulator, Checklist, Clipboard Copy
 */
-
-// Image Data for Lightbox
-const moodboardImages = [
-    { src: 'assets/images/extracted_img_p7_1_X137.png', caption: 'Capa com Lettering de Destaque' },
-    { src: 'assets/images/extracted_img_p7_2_X141.jpg', caption: 'Ambiente Acolhedor & Foco' },
-    { src: 'assets/images/extracted_img_p7_3_X146.png', caption: 'Legenda Cursiva Destaque' },
-    { src: 'assets/images/extracted_img_p7_4_X150.png', caption: 'Grifos e Legenda Laranja' },
-    { src: 'assets/images/extracted_img_p7_5_X154.png', caption: 'Bloco de Texto 2-3 Palavras' },
-    { src: 'assets/images/extracted_img_p7_6_X158.png', caption: 'Tipografia Editorial' },
-    { src: 'assets/images/extracted_img_p7_7_X162.png', caption: 'Legenda Cursiva & Grifo' },
-    { src: 'assets/images/extracted_img_p7_8_X166.png', caption: 'Finalização & Logo da Marca' }
-];
-
-let activeLightboxIndex = 0;
 
 // Initialize on DOM Load
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initSimulator();
     initChecklist();
-    initLightboxKeyboard();
 });
 
 // 1. Navigation Logic
@@ -134,64 +119,6 @@ function updateChecklistProgress() {
     }
 }
 
-// 4. Lightbox Gallery Logic
-function openLightbox(index) {
-    const modal = document.getElementById('lightbox-modal');
-    const img = document.getElementById('lightbox-img');
-    const caption = document.getElementById('lightbox-caption');
-
-    if (modal && img && caption && moodboardImages[index]) {
-        activeLightboxIndex = index;
-        img.src = moodboardImages[index].src;
-        caption.textContent = moodboardImages[index].caption;
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Lock background scroll
-    }
-}
-
-function closeLightbox() {
-    const modal = document.getElementById('lightbox-modal');
-    if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Restore background scroll
-    }
-}
-
-function changeLightboxSlide(dir) {
-    let nextIndex = activeLightboxIndex + dir;
-    if (nextIndex >= moodboardImages.length) {
-        nextIndex = 0;
-    } else if (nextIndex < 0) {
-        nextIndex = moodboardImages.length - 1;
-    }
-    openLightbox(nextIndex);
-}
-
-function initLightboxKeyboard() {
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        const modal = document.getElementById('lightbox-modal');
-        if (modal && modal.style.display === 'flex') {
-            if (e.key === 'Escape') {
-                closeLightbox();
-            } else if (e.key === 'ArrowRight') {
-                changeLightboxSlide(1);
-            } else if (e.key === 'ArrowLeft') {
-                changeLightboxSlide(-1);
-            }
-        }
-    });
-
-    // Close lightbox when clicking outside the content image
-    const modal = document.getElementById('lightbox-modal');
-    if (modal) {
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                closeLightbox();
-            }
-        });
-    }
-}
 
 // 5. Copy Helpers
 function showToast(message) {
