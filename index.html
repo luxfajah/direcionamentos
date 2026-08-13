@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice Stoff - Manual de Identidade Visual & Design System Web</title>
+    <meta name="description" content="Manual de Alinhamento Criativo, Diretrizes de Web Design e Briefing para Desenvolvedores - Alice Stoff. Estética sofisticada, acolhedora e minimalista baseada em design editorial.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="brand-title">DUAS MÃOS</h1>
+                <p class="brand-subtitle">DIREÇÃO DE ARTE / CORPORATIVO</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-target="capa">
+                    <span class="nav-num">00</span>
+                    <span class="nav-icon">📖</span>
+                    <span class="nav-text">Capa & Autoria</span>
+                </button>
+                <button class="nav-item" data-target="conceito">
+                    <span class="nav-num">01</span>
+                    <span class="nav-icon">✨</span>
+                    <span class="nav-text">Conceito & Posicionamento Web</span>
+                </button>
+                <button class="nav-item" data-target="diretrizes">
+                    <span class="nav-num">02</span>
+                    <span class="nav-icon">🎛️</span>
+                    <span class="nav-text">Grid & Ritmo Visual (Layout)</span>
+                </button>
+                <button class="nav-item" data-target="legendas">
+                    <span class="nav-num">03</span>
+                    <span class="nav-icon">📝</span>
+                    <span class="nav-text">Componentes & Grafismos (UI)</span>
+                </button>
+                <button class="nav-item" data-target="cores-tipografia">
+                    <span class="nav-num">04</span>
+                    <span class="nav-icon">🎨</span>
+                    <span class="nav-text">Cores & Tipografia</span>
+                </button>
+                <button class="nav-item" data-target="checklist">
+                    <span class="nav-num">05</span>
+                    <span class="nav-icon">🎗️</span>
+                    <span class="nav-text">Checklist de Qualidade UX</span>
+                </button>
+                <button class="nav-item" data-target="moodboard">
+                    <span class="nav-num">06</span>
+                    <span class="nav-icon">👁️</span>
+                    <span class="nav-text">Moodboard de Interfaces</span>
+                </button>
+                <button class="nav-item" data-target="downloads">
+                    <span class="nav-num">07</span>
+                    <span class="nav-icon">📥</span>
+                    <span class="nav-text">Download de Ativos</span>
+                </button>
+                <div class="nav-divider"></div>
+                <button class="nav-item nav-designer" data-target="designer-spec">
+                    <span class="nav-num">DEV</span>
+                    <span class="nav-icon">💻</span>
+                    <span class="nav-text">Briefing do Web Designer</span>
+                </button>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p>Manual de Direção Criativa</p>
+                <p>Versão 1.0 . Julho de 2026</p>
+                <p class="copyright">&copy; Duas Mãos</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Topbar actions -->
+            <header class="topbar">
+                <div class="pdf-tag">PROJETO ALICE STOFF . BRIEFING DE WEB DESIGN</div>
+                <div class="topbar-actions">
+                    <button class="btn btn-secondary" onclick="switchSection('downloads')">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                        Arquivos de Fontes
+                    </button>
+                    <button class="btn btn-primary" onclick="switchSection('checklist')">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Checklist UX
+                    </button>
+                </div>
+            </header>
+
+            <!-- Container for Sections -->
+            <div class="sections-wrapper">
+                
+                <!-- Section 00: Capa & Autoria -->
+                <section id="capa" class="content-section active">
+                    <div class="hero-container">
+                        <span class="overline">PROJETO ALICE STOFF . BRANDING DIGITAL</span>
+                        <h2 class="title-large">MANUAL DE<br><span class="highlight-text">DIREÇÃO CRIATIVA WEB</span></h2>
+                        <p class="subtitle">Guia de Alinhamento Conceitual, UI/UX e Design de Interfaces</p>
+                        
+                        <div class="info-card">
+                            <span class="card-label">Diretriz de Web Design</span>
+                            <p>Este manual serve como guia conceitual e técnico para garantir que todas as plataformas digitais e o design de interface do website da Alice Stoff reflitam uma linguagem sofisticada, acolhedora e minimalista.</p>
+                        </div>
+                        
+                        <div class="meta-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">CLIENTE</span>
+                                <span class="meta-value">Alice Stoff</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">DESIGN</span>
+                                <span class="meta-value">Lux Fajah</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">ESTRATÉGIA</span>
+                                <span class="meta-value">Thacy Nunes</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">PROJETO</span>
+                                <span class="meta-value">Welynadia</span>
+                            </div>
+                        </div>
+                        
+                        <p class="disclaimer">DUAS MÃOS DIREÇÃO DE ARTE. Este documento e seus ativos embutidos são propriedades corporativas exclusivas da Alice Stoff.</p>
+                    </div>
+                </section>
+
+                <!-- Section 01: Conceito & Posicionamento Web -->
+                <section id="conceito" class="content-section">
+                    <h2 class="section-title">Apresentação & Conceito</h2>
+                    <p class="section-desc">O posicionamento da marca pessoal e os valores estéticos fundamentais do projeto aplicados na web.</p>
+                    
+                    <div class="info-card warning-border">
+                        <span class="card-label">PROPÓSITO DIGITAL</span>
+                        <p>A interface do website deve ser entendida como a principal extensão digital da marca. O propósito é transmitir proximidade, elegância e autoridade natural do trabalho da Alice Stoff, sem recorrer a excessos gráficos ou recursos poluídos comuns em sites corporativos.</p>
+                    </div>
+
+                    <div class="section-block">
+                        <h3>Posicionamento de Comunicação Web</h3>
+                        <p>Alice Stoff fala para um público sofisticado e conectado. A interface digital deve mesclar sensibilidade criativa e credibilidade profissional. A estética segue a linha editorial de alta costura e revistas de design impresso, combinada com colagens e scrapbook orgânico contemporâneo.</p>
+                    </div>
+
+                    <div class="personality-grid">
+                        <div class="p-card should-be">
+                            <h4>DEVE PARECER</h4>
+                            <ul>
+                                <li><span class="bullet">•</span> Editorial e fluida (como um catálogo impresso)</li>
+                                <li><span class="bullet">•</span> Orgânica, humana e acolhedora</li>
+                                <li><span class="bullet">•</span> Minimamente sofisticada</li>
+                                <li><span class="bullet">•</span> Autoral e criativa</li>
+                            </ul>
+                        </div>
+                        <div class="p-card should-not-be">
+                            <h4>NÃO DEVE PARECER</h4>
+                            <ul>
+                                <li><span class="bullet">×</span> Fria, engessada ou puramente corporativa</li>
+                                <li><span class="bullet">×</span> Genérica baseada em templates pré-prontos</li>
+                                <li><span class="bullet">×</span> Poluída com pop-ups ou efeitos visuais agressivos</li>
+                                <li><span class="bullet">×</span> Infantil ou colorida de forma artificial</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 02: Grid & Ritmo Visual (Layout) -->
+                <section id="diretrizes" class="content-section">
+                    <h2 class="section-title">Grid & Ritmo Visual</h2>
+                    <p class="section-desc">Regras de layout, uso de espaços e controle de animações para garantir elegância e clareza de leitura.</p>
+
+                    <div class="info-card info-border">
+                        <span class="card-label">CONSELHO DE DIREÇÃO EDITORIAL</span>
+                        <p>O ritmo de navegação no site deve ser fluido e natural. Respeite os espaços em branco (respiros editoriais) para dar foco ao conteúdo principal, evitando layouts sobrecarregados de informações ou grids densos demais.</p>
+                    </div>
+
+                    <div class="section-block">
+                        <h3>Layout & Navegação</h3>
+                        <ul class="clean-list">
+                            <li><strong>Transições Suaves:</strong> Use transições invisíveis ou suaves nos links e menus. Evite efeitos de zoom contínuo ou transições 3D agressivas no carregamento de blocos.</li>
+                            <li><strong>Atenção Inicial:</strong> Garanta que o topo da página (Hero area) prenda a atenção nos primeiros 3 segundos usando o título principal em Cosmodrome Monoline e o texto de apoio em Albert Sans, sem carrosséis frenéticos de banners.</li>
+                        </ul>
+                    </div>
+
+                    <div class="practices-block">
+                        <h3>Tabela de Boas Práticas - Motion Design Web & UX</h3>
+                        <div class="practices-table">
+                            <div class="practice-col recommended">
+                                <h5>RECOMENDADO (DISCRETO)</h5>
+                                <ul>
+                                    <li>Efeitos de hover suaves via CSS (mudança sutil de cor ou escala 1.02)</li>
+                                    <li>Fade-in progressivo de blocos de imagem ao rolar a página</li>
+                                    <li>Aparecimento suave de menus e modais com controle de opacidade</li>
+                                </ul>
+                            </div>
+                            <div class="practice-col avoid">
+                                <h5>EVITAR (EXAGERADO)</h5>
+                                <ul>
+                                    <li>Animações de entrada pesadas (bounce, tremor, rotações 3D)</li>
+                                    <li>Efeitos visuais de tremor/glitch em botões e links</li>
+                                    <li>Pop-ups automáticos e elementos que flutuam sem propósito</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 03: Componentes & Grafismos (UI) -->
+                <section id="legendas" class="content-section">
+                    <h2 class="section-title">Componentes & Grafismos (UI)</h2>
+                    <p class="section-desc">Aplicação de letterings manuscritos e grifos orgânicos para direcionamento de foco e UX.</p>
+
+                    <div class="info-card alert-border">
+                        <span class="card-label">PROPÓSITO DOS GRAFISMOS</span>
+                        <p>Nunca utilize intervenções gráficas apenas para decorar. Cada rabisco, seta ou palavra manuscrita deve surgir com o único propósito de ressaltar ações importantes do usuário (como botões e links) ou destacar informações-chave.</p>
+                    </div>
+
+                    <div class="legendas-grid">
+                        <div class="grid-card">
+                            <h3>Diretrizes de Tipografia Web</h3>
+                            <ul class="styled-list">
+                                <li>Mantenha blocos de parágrafos de texto curtos, com boa altura de linha (ex: `line-height: 1.6`) para facilitar a leitura.</li>
+                                <li>Destaque termos específicos no texto em <span class="text-orange">Laranja</span> para criar hierarquia visual e direcionamento ocular rápido.</li>
+                                <li>Utilize a cor <span class="text-creme-dark">Off White</span> como cor de fundo dominante e para blocos de legenda sutil, evitando contrastes agressivos de branco absoluto.</li>
+                            </ul>
+                        </div>
+                        <div class="grid-card">
+                            <h3>Grafismos e Detalhes Manuais</h3>
+                            <ul class="styled-list">
+                                <li>Setas e círculos apontadores devem ter aparência de desenho feito à mão com pincel fino (use SVGs para melhor nitidez).</li>
+                                <li>Sublinhados e grifos manuais acompanham apenas as palavras e links que requerem ação do usuário.</li>
+                                <li>Títulos curtos de grande impacto e frases inspiracionais devem usar a fonte cursiva <span class="font-cursive text-azul">Cosmodrome</span>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 04: Cores & Tipografia -->
+                <section id="cores-tipografia" class="content-section">
+                    <h2 class="section-title">Cores & Tipografia</h2>
+                    <p class="section-desc">As diretrizes oficiais da paleta de cores e tipografia da Alice Stoff aplicadas para interfaces web.</p>
+
+                    <div class="section-block">
+                        <h3>Tipografia da Identidade</h3>
+                        <div class="typography-showcase">
+                            <div class="typo-card">
+                                <span class="typo-tag">FONTE PRINCIPAL (HIGHLIGHTS / CITAÇÕES)</span>
+                                <h4 class="font-cursive typo-large">Cosmodrome Monoline</h4>
+                                <p>Usada em letterings orgânicos de destaque, títulos manuscritos curtos e pequenas intervenções estéticas na interface.</p>
+                            </div>
+                            <div class="typo-card">
+                                <span class="typo-tag">FONTE SECUNDÁRIA (CORPO / MENU / HIERARQUIA)</span>
+                                <h4 class="font-sans typo-large">Albert Sans</h4>
+                                <p>Usada no corpo de textos informativos, legendas de imagens, subtítulos de seção, tabelas e nos menus do site.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simulator block -->
+                    <div class="simulator-block">
+                        <h3>Simulador de Texto</h3>
+                        <p class="simulator-desc">Digite abaixo para ver como seu texto se comporta nas duas fontes da identidade.</p>
+                        <input type="text" id="simulator-input" value="O essencial é invisível aos olhos." placeholder="Escreva algo...">
+                        
+                        <div class="simulator-previews">
+                            <div class="preview-box">
+                                <span class="preview-label">PREVIEW - COSMODROME</span>
+                                <div class="preview-render font-cursive text-azul" id="preview-cosmodrome">O essencial é invisível aos olhos.</div>
+                            </div>
+                            <div class="preview-box">
+                                <span class="preview-label">PREVIEW - ALBERT SANS</span>
+                                <div class="preview-render font-sans" id="preview-albertsans">O essencial é invisível aos olhos.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colors block -->
+                    <div class="colors-block">
+                        <h3>Paleta de Cores Oficial</h3>
+                        <p class="simulator-desc">Clique nos blocos para copiar o código hexadecimal da cor.</p>
+                        <div class="color-palette">
+                            <div class="color-swatch-wrapper">
+                                <button class="color-swatch" style="background-color: #2E2A6E;" onclick="copyColor('#2E2A6E', this)" aria-label="Copiar cor Azul #2E2A6E">
+                                    <span class="swatch-name">Azul</span>
+                                    <span class="swatch-hex">#2E2A6E</span>
+                                </button>
+                            </div>
+                            <div class="color-swatch-wrapper">
+                                <button class="color-swatch" style="background-color: #E8763A;" onclick="copyColor('#E8763A', this)" aria-label="Copiar cor Laranja #E8763A">
+                                    <span class="swatch-name" style="color: #fff;">Laranja</span>
+                                    <span class="swatch-hex" style="color: #fff;">#E8763A</span>
+                                </button>
+                            </div>
+                            <div class="color-swatch-wrapper">
+                                <button class="color-swatch" style="background-color: #E8C4B8; color: #1E1C44;" onclick="copyColor('#E8C4B8', this)" aria-label="Copiar cor Creme #E8C4B8">
+                                    <span class="swatch-name">Creme</span>
+                                    <span class="swatch-hex">#E8C4B8</span>
+                                </button>
+                            </div>
+                            <div class="color-swatch-wrapper">
+                                <button class="color-swatch" style="background-color: #F4EDE4; color: #1E1C44; border: 1px solid #d3c9ba;" onclick="copyColor('#F4EDE4', this)" aria-label="Copiar cor Off White #F4EDE4">
+                                    <span class="swatch-name">Off White</span>
+                                    <span class="swatch-hex">#F4EDE4</span>
+                                </button>
+                            </div>
+                            <div class="color-swatch-wrapper">
+                                <button class="color-swatch" style="background-color: #9B9EA6;" onclick="copyColor('#9B9EA6', this)" aria-label="Copiar cor Cinza #9B9EA6">
+                                    <span class="swatch-name">Cinza</span>
+                                    <span class="swatch-hex">#9B9EA6</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 05: Checklist de Qualidade UX -->
+                <section id="checklist" class="content-section">
+                    <h2 class="section-title">Checklist de Qualidade UX</h2>
+                    <p class="section-desc">Lista interativa de auditoria e verificação de usabilidade e visual antes de lançar as páginas.</p>
+
+                    <div class="checklist-summary">
+                        <div class="progress-container">
+                            <svg class="progress-svg" viewBox="0 0 120 120">
+                                <circle class="progress-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="progress-bar" id="checklist-progress-ring" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <div class="progress-text" id="checklist-progress-percent">0%</div>
+                        </div>
+                        <div class="summary-details">
+                            <h3>Status da Interface</h3>
+                            <p>Complete as verificações abaixo para garantir o alinhamento de usabilidade e identidade.</p>
+                            <button class="btn btn-secondary btn-sm" id="btn-clear-checklist">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                                Limpar Progresso
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="checklist-grid">
+                        <div class="checklist-card">
+                            <h3 class="checklist-cat-title cat-visual">Design de Interface (UI)</h3>
+                            <div class="checklist-items">
+                                <label class="checklist-item-label" id="lbl-item-vis1">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="vis1" id="chk-vis1">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Tipografia correta (Albert Sans e Cosmodrome)</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-vis2">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="vis2" id="chk-vis2">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Paleta de cores oficial aplicada sem ruído</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-vis3">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="vis3" id="chk-vis3">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Lettering manuscrito em SVG com boa escala</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-vis4">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="vis4" id="chk-vis4">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Contraste visual dos textos respeita a acessibilidade</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="checklist-card">
+                            <h3 class="checklist-cat-title cat-edit">Interações & UX</h3>
+                            <div class="checklist-items">
+                                <label class="checklist-item-label" id="lbl-item-rit1">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="rit1" id="chk-rit1">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Respiros e espaços em branco editorial respeitados</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-rit2">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="rit2" id="chk-rit2">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Transições de hover suaves aplicadas em links/botões</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-rit3">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="rit3" id="chk-rit3">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Animações de entrada discretas ao rolar a tela</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-rit4">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="rit4" id="chk-rit4">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Design totalmente responsivo para dispositivos móveis</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="checklist-card">
+                            <h3 class="checklist-cat-title cat-brand">Branding Geral</h3>
+                            <div class="checklist-items">
+                                <label class="checklist-item-label" id="lbl-item-brand1">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="brand1" id="chk-brand1">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">O site reflete a autoridade e elegância da Alice</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-brand2">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="brand2" id="chk-brand2">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Branding discreto e de tom editorial</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-brand3">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="brand3" id="chk-brand3">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Elementos gráficos de colagem de scrapbook consistentes</span>
+                                </label>
+                                <label class="checklist-item-label" id="lbl-item-brand4">
+                                    <input type="checkbox" class="checklist-checkbox" data-id="brand4" id="chk-brand4">
+                                    <span class="check-custom"></span>
+                                    <span class="check-text">Navegação intuitiva que facilita a leitura</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 06: Moodboard de Interfaces -->
+                <section id="moodboard" class="content-section">
+                    <h2 class="section-title">Moodboard de Interfaces</h2>
+                    <p class="section-desc">Painel integrado com imagens reais mostrando a harmonia de enquadramento, contrastes editoriais e letterings aplicados em layouts. Clique para ampliar.</p>
+
+                    <div class="moodboard-grid">
+                        <div class="moodboard-item card-large" onclick="openLightbox(0)">
+                            <img src="assets/images/extracted_img_p7_1_X137.png" alt="Referência de Capa e Lettering Integrado" loading="lazy">
+                            <div class="moodboard-caption">Capa com Lettering de Destaque</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(1)">
+                            <img src="assets/images/extracted_img_p7_2_X141.jpg" alt="Referência de Enquadramento e Foco" loading="lazy">
+                            <div class="moodboard-caption">Ambiente Acolhedor & Foco</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(2)">
+                            <img src="assets/images/extracted_img_p7_3_X146.png" alt="Legenda de Destaque com Bloco Curto" loading="lazy">
+                            <div class="moodboard-caption">Destaque Cursivo</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(3)">
+                            <img src="assets/images/extracted_img_p7_4_X150.png" alt="Grifos Manuais de Foco" loading="lazy">
+                            <div class="moodboard-caption">Grifos e Elemento Laranja</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(4)">
+                            <img src="assets/images/extracted_img_p7_5_X154.png" alt="Blocos Curtos de Legendas e Contraste" loading="lazy">
+                            <div class="moodboard-caption">Hierarquia de Texto e Contraste</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(5)">
+                            <img src="assets/images/extracted_img_p7_6_X158.png" alt="Tipografia Albert Sans aplicada" loading="lazy">
+                            <div class="moodboard-caption">Tipografia Editorial</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(6)">
+                            <img src="assets/images/extracted_img_p7_7_X162.png" alt="Legenda de Ênfase e Grafismo Laranja" loading="lazy">
+                            <div class="moodboard-caption">Legenda Cursiva & Grifo</div>
+                        </div>
+                        <div class="moodboard-item" onclick="openLightbox(7)">
+                            <img src="assets/images/extracted_img_p7_8_X166.png" alt="Exemplo de frase contínua com quebras" loading="lazy">
+                            <div class="moodboard-caption">Finalização & Logo da Marca</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 07: Download de Ativos -->
+                <section id="downloads" class="content-section">
+                    <h2 class="section-title">Download de Ativos</h2>
+                    <p class="section-desc">Baixe e instale as fontes oficiais da Alice Stoff para usar em layouts no Figma, Adobe XD ou diretamente em código digital.</p>
+
+                    <div class="downloads-grid">
+                        <div class="download-card">
+                            <div class="download-icon">🔤</div>
+                            <div class="download-info">
+                                <h4>Cosmodrome Monoline</h4>
+                                <p>Fonte primária de destaques (.OTF)</p>
+                            </div>
+                            <a href="assets/fonts/Cosmodrome-Monoline.otf" download class="btn btn-primary btn-sm">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                Baixar OTF
+                            </a>
+                        </div>
+                        
+                        <div class="download-card">
+                            <div class="download-icon">🔤</div>
+                            <div class="download-info">
+                                <h4>Albert Sans Regular</h4>
+                                <p>Fonte secundária de legendas (.TTF)</p>
+                            </div>
+                            <a href="assets/fonts/AlbertSans-Regular.ttf" download class="btn btn-primary btn-sm">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                Baixar TTF
+                            </a>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-icon">🔤</div>
+                            <div class="download-info">
+                                <h4>Albert Sans Bold</h4>
+                                <p>Fonte secundária negrito (.TTF)</p>
+                            </div>
+                            <a href="assets/fonts/AlbertSans-Bold.ttf" download class="btn btn-primary btn-sm">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                Baixar TTF
+                            </a>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-icon">🔤</div>
+                            <div class="download-info">
+                                <h4>Albert Sans Italic</h4>
+                                <p>Fonte secundária itálico (.TTF)</p>
+                            </div>
+                            <a href="assets/fonts/AlbertSans-Italic.ttf" download class="btn btn-primary btn-sm">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                Baixar TTF
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 08: Briefing do Web Designer (Developer/Designer spec sheet) -->
+                <section id="designer-spec" class="content-section">
+                    <h2 class="section-title">Briefing & Especificações Técnicas</h2>
+                    <p class="section-desc">Guia rápido de design system para o Web Designer / Programador Frontend implementar a marca em canais digitais.</p>
+
+                    <div class="tech-alert">
+                        <strong>Aviso ao Web Designer:</strong> As cores e fontes especificadas abaixo estão prontas para inclusão via CSS. Recomenda-se o uso de layouts assimétricos com colagens em scrapbook e bastante espaço em branco para manter a atmosfera de revista editorial proposta.
+                    </div>
+
+                    <div class="section-block">
+                        <h3>CSS Custom Properties (Variáveis CSS)</h3>
+                        <p>Copie e cole a estrutura abaixo diretamente em seu arquivo CSS global (ex: `variables.css` ou `:root`):</p>
+                        
+                        <div class="code-container">
+                            <button class="btn-copy-code" onclick="copyText('css-tokens-code')">Copiar</button>
+                            <pre><code id="css-tokens-code">:root {
+  /* Paleta de Cores Oficiais */
+  --color-azul: #2E2A6E;       /* Títulos principais, menus importantes, blocos de fundo */
+  --color-laranja: #E8763A;    /* Botões ativos, links importantes, detalhes de grifo */
+  --color-creme: #E8C4B8;      /* Cor de suporte de blocos, bordas secundárias */
+  --color-off-white: #F4EDE4;  /* Cor de fundo principal das páginas, reduz fadiga visual */
+  --color-cinza: #9B9EA6;      /* Textos secundários, bordas gerais, ícones inativos */
+
+  /* Tipografia */
+  --font-highlight: 'Cosmodrome Monoline', cursive;
+  --font-body: 'Albert Sans', sans-serif;
+  
+  /* Transições Web Padrão */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease-in-out;
+
+  /* Sombra editorial sutil */
+  --shadow-sm: 0 2px 8px rgba(46, 42, 110, 0.05);
+  --shadow-md: 0 8px 24px rgba(46, 42, 110, 0.08);
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <h3>Declaração de @font-face</h3>
+                        <p>Para usar os arquivos de fontes originais da identidade localmente no site, adicione o seguinte bloco ao topo de suas folhas de estilo:</p>
+                        
+                        <div class="code-container">
+                            <button class="btn-copy-code" onclick="copyText('css-fontface-code')">Copiar</button>
+                            <pre><code id="css-fontface-code">@font-face {
+  font-family: 'Cosmodrome Monoline';
+  src: url('assets/fonts/Cosmodrome-Monoline.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('assets/fonts/AlbertSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('assets/fonts/AlbertSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('assets/fonts/AlbertSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section-block">
+                        <h3>Regras de Hierarquia Tipográfica Sugerida</h3>
+                        <div class="table-container">
+                            <table class="designer-table">
+                                <thead>
+                                    <tr>
+                                        <th>Tag / Elemento</th>
+                                        <th>Família Tipográfica</th>
+                                        <th>Estilo Sugerido</th>
+                                        <th>Uso Recomendado em Web</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Títulos de Destaque / Citações</strong></td>
+                                        <td class="font-cursive">Cosmodrome Monoline</td>
+                                        <td>Size: 42px - 56px, Line-height: 1.1</td>
+                                        <td>Intervenções manuscritas flutuantes, notas e aspas.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Títulos Principais (h1, h2)</strong></td>
+                                        <td>Albert Sans (Bold)</td>
+                                        <td>Size: 32px - 40px, Line-height: 1.2</td>
+                                        <td>Títulos principais de seção, caixa alta opcional.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Subtítulos (h3)</strong></td>
+                                        <td>Albert Sans (Medium/Bold)</td>
+                                        <td>Size: 20px - 24px, Line-height: 1.3</td>
+                                        <td>Títulos de blocos de conteúdo ou cards.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Corpo de Texto (p, span)</strong></td>
+                                        <td>Albert Sans (Regular)</td>
+                                        <td>Size: 15px - 16px, Line-height: 1.6</td>
+                                        <td>Parágrafos de texto corrido. Altura de linha de 1.6 é essencial.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Botões e Links (a, button)</strong></td>
+                                        <td>Albert Sans (Bold)</td>
+                                        <td>Size: 14px - 16px, Color: Laranja / Azul</td>
+                                        <td>Textos curtos de ação, hover suave, transição de 150ms.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-content" id="lightbox-img" src="" alt="Imagem Ampliada">
+            <div id="lightbox-caption" class="lightbox-caption-text"></div>
+        </div>
+        <a class="lightbox-prev" onclick="changeLightboxSlide(-1)">&#10094;</a>
+        <a class="lightbox-next" onclick="changeLightboxSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Código copiado com sucesso!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
